@@ -154,3 +154,10 @@ let funcionario2: Funcionario = {
 console.log(funcionario.supervisores)
 console.log(funcionario.baterPonto(8))
 console.log(funcionario.baterPonto(10))
+
+// Union Types
+let nota: number | string = 10
+console.log(`Minha nota é ${nota}!`)
+nota = '10'
+console.log(`Minha nota é ${nota}!`)
+// nota = true
