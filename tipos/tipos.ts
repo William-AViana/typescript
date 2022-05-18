@@ -121,6 +121,12 @@ console.log(usuario)
       -> Fora do horário (> 8)
 */
 
+// Alias
+type Funcionario = {
+  supervisores: string[],
+  baterPonto: (horas: number) => string,
+}
+
 let funcionario: {
   supervisores: string[],
   baterPonto: (horas: number) => string,
