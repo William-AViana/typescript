@@ -136,7 +136,18 @@ let funcionario: {
     if (horario <= 8) {
       return 'Ponto Normal'
     } else {
-      return 'Fora do horário'
+      return 'Fora do horário!'
+    }
+  }
+}
+
+let funcionario2: Funcionario = {
+  supervisores: ['Will', 'Grazi'],
+  baterPonto(horario: number): string {
+    if (horario <= 8) {
+      return 'Ponto Normal'
+    } else {
+      return 'Fora do horário!'
     }
   }
 }
