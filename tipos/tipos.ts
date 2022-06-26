@@ -192,3 +192,33 @@ const produto = {
 }
 
 produto.validarProduto()
+
+// Valores opcionais com tipo "null"
+let altura = 15
+// altura = null
+
+let alturaOpcional: null | number = 15
+alturaOpcional = null
+
+type Contato = {
+  nome: string,
+  tel1: string,
+  tel2: string | null
+}
+
+const contato1: Contato = {
+  nome: 'Will',
+  tel1: '123456789',
+  tel2: null
+}
+
+console.log(contato1.nome)
+console.log(contato1.tel1)
+console.log(contato1.tel2)
+
+let podeSerNulo = null
+// ao atribuir vaor "null" a uma variável ela assume o valor "any"
+podeSerNulo = 16
+console.log(podeSerNulo)
+podeSerNulo = 'Teste'
+console.log(podeSerNulo)
