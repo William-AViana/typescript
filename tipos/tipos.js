@@ -128,3 +128,21 @@ if (typeof valor === 'number') {
 else {
     console.log(typeof valor);
 }
+// Never - função que nunca vai retornar ou encerrar.
+// finaliza com tratativas de erros
+function falha(msg) {
+    throw new Error(msg);
+}
+const produto = {
+    nome: 'Bola',
+    preco: 20,
+    validarProduto() {
+        if (!this.nome || this.nome.trim().length == 0) {
+            falha('Precisa ter um nome!');
+        }
+        if (this.preco <= 0) {
+            falha('Preço inválido!');
+        }
+    }
+};
+produto.validarProduto();
