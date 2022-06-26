@@ -165,3 +165,16 @@ podeSerNulo = 16;
 console.log(podeSerNulo);
 podeSerNulo = 'Teste';
 console.log(podeSerNulo);
+let contaBancaria = {
+    saldo: 3456,
+    depositar(valor) {
+        this.saldo += valor;
+    }
+};
+let correntista = {
+    name: 'William',
+    contaBancaria: contaBancaria,
+    contatos: ['12345679', '987654321']
+};
+correntista.contaBancaria.depositar(2000);
+console.log(correntista);

@@ -222,3 +222,31 @@ podeSerNulo = 16
 console.log(podeSerNulo)
 podeSerNulo = 'Teste'
 console.log(podeSerNulo)
+
+// Desafio código JS para TS
+type ContaBancaria = {
+  saldo: number,
+  depositar: (valor: number) => void
+}
+
+let contaBancaria: ContaBancaria = {
+  saldo: 3456,
+  depositar(valor: number) {
+    this.saldo += valor
+  }
+}
+
+type Correntista = {
+  name: string,
+  contaBancaria: ContaBancaria,
+  contatos: string[]
+}
+
+let correntista: Correntista = {
+  name: 'William',
+  contaBancaria: contaBancaria,
+  contatos: ['12345679', '987654321']
+}
+
+correntista.contaBancaria.depositar(2000)
+console.log(correntista)
