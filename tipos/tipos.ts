@@ -132,7 +132,7 @@ let funcionario: {
   baterPonto: (horas: number) => string,
 } = {
   supervisores: ['Will', 'Grazi', 'Keila', 'Samuel'],
-  baterPonto(horario: number): string {
+  baterPonto(horario) {
     if (horario <= 8) {
       return 'Ponto Normal'
     } else {
@@ -143,7 +143,7 @@ let funcionario: {
 
 let funcionario2: Funcionario = {
   supervisores: ['Will', 'Grazi'],
-  baterPonto(horario: number): string {
+  baterPonto(horario) {
     if (horario <= 8) {
       return 'Ponto Normal'
     } else {
@@ -231,7 +231,7 @@ type ContaBancaria = {
 
 let contaBancaria: ContaBancaria = {
   saldo: 3456,
-  depositar(valor: number) {
+  depositar(valor) {
     this.saldo += valor
   }
 }
