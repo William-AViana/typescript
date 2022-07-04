@@ -10,3 +10,4 @@ console.log(`Canal = ${canal}!`);
 */
 nome = 'Pedro';
 console.log(`Nome = ${nome}`);
+//# sourceMappingURL=compilador.js.map

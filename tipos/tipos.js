@@ -32,6 +32,7 @@ endereco = ['Av dois', 125, 'apt 5'];
 console.log(endereco);
 // enums - valores pré-definidos
 var Cor;
+// enums - valores pré-definidos
 (function (Cor) {
     Cor[Cor["Cinza"] = 0] = "Cinza";
     Cor[Cor["Branco"] = 100] = "Branco";
@@ -178,3 +179,4 @@ let correntista = {
 };
 correntista.contaBancaria.depositar(2000);
 console.log(correntista);
+//# sourceMappingURL=tipos.js.map
