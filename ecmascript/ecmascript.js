@@ -42,4 +42,30 @@ for (let i = 0; i < 10; i++) {
    "let" e a const "cpf" é possível atribuir outros valores
    o compilador vai alertar sobre o código não estar correto.
 */
+// Arrow Function
+const somar = function (n1, n2) {
+    return n1 + n2;
+};
+console.log(somar(5, 5));
+const subtrair = (n1, n2) => n1 - n2;
+console.log(subtrair(3, 5));
+const saudacao = () => console.log('Saudação!');
+saudacao();
+const falarCom = (pessoa) => console.log('Olá ' + pessoa);
+falarCom('João');
+// this pode variar de acordo com a chamada
+// function normalComThis() {
+//   console.log(this)
+// }
+// normalComThis()
+// // vai variar o this de acordo com a chamada
+// const normlaComThisEspecial = normalComThis
+//   .bind({ name: 'William' })
+// normlaComThisEspecial()
+// // this??? - com arrow nunca vai haver variações da chamada
+// console.log(this)
+// const arrowComThis = () => console.log(this)
+// const arrowComThisEspecial = arrowComThis
+//   .bind({ nome: 'Grazi' })
+// arrowComThisEspecial()
 //# sourceMappingURL=ecmascript.js.map
