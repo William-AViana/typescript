@@ -85,4 +85,10 @@ console.log(Math.max(...numbers)); // Spread "espalhar"
 const turmaA = ['William', 'Grazi', 'Ke', 'Samuka'];
 const turmaB = ['Roberto', 'Nanci', ...turmaA, 'Meire', 'Mario'];
 console.log(turmaB);
+// Rest & Spread
+function retornarArray(...args) {
+    return args; // Rest "agrupar"
+}
+const numeros = retornarArray(1, 2, 4, 5, 6, 7, 8);
+console.log(numeros);
 //# sourceMappingURL=ecmascript.js.map

@@ -106,3 +106,12 @@ const turmaB: string[] =
   ['Roberto', 'Nanci', ...turmaA, 'Meire', 'Mario']
 
 console.log(turmaB)
+
+// Rest & Spread
+function retornarArray(...args: number[]): number[] {
+  return args // Rest "agrupar"
+}
+
+const numeros = retornarArray(1, 2, 4, 5, 6, 7, 8)
+console.log(numeros)
+
