@@ -96,3 +96,13 @@ function contagemRegressiva(inicio: number = 5,
 }
 contagemRegressiva()
 contagemRegressiva(3)
+
+// Rest & Spread
+const numbers = [1, 10, 99, -5, 200, 1034]
+console.log(Math.max(...numbers)) // Spread "espalhar"
+
+const turmaA: string[] = ['William', 'Grazi', 'Ke', 'Samuka']
+const turmaB: string[] =
+  ['Roberto', 'Nanci', ...turmaA, 'Meire', 'Mario']
+
+console.log(turmaB)
