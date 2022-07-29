@@ -126,4 +126,15 @@ const { nome: n, preco: p, caracteristicas: { importado } } = item;
 console.log(n);
 console.log(p);
 console.log(importado);
+// Template String
+const usuarioId = 'Suporte William';
+const notificacoes = '19';
+// const boasVindas = 'Boas vindas ' + usuarioId +
+//   ' Notificações ' + notificacoes
+const boasVindas = `
+  Boas vindas ${usuarioId}
+  Notificações: ${parseInt(notificacoes) > 9 ?
+    '+9' : notificacoes}
+`;
+console.log(boasVindas);
 //# sourceMappingURL=ecmascript.js.map
