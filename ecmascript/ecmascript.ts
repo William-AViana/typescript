@@ -130,3 +130,12 @@ function tuplaParam2(...params: [number, string, boolean]): void {
 }
 
 tuplaParam2(...tupla)
+
+// Destructuring (array)
+const caracteriticas = ['Motor Zetec 1.8', 2020]
+// const motor = caracteriticas[0]
+// const ano = caracteriticas[1]
+
+const [motor, ano] = caracteriticas
+console.log(motor)
+console.log(ano)
