@@ -183,10 +183,11 @@ function esperar3sPromise() {
 }
 esperar3sPromise()
     .then(dado => console.log(dado));
-fetch('https://swapi.dev/api/people/1')
+fetch('https://swapi.dev/api/peope/1')
     .then(res => res.json())
     .then(personagem => personagem.films)
     .then(films => fetch(films[1]))
     .then(resFilms => resFilms.json())
-    .then(filme => console.log(filme.title));
+    .then(filme => console.log(filme.title))
+    .catch(err => console.error(err));
 //# sourceMappingURL=ecmascript.js.map
