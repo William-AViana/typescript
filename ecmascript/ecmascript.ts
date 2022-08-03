@@ -206,3 +206,33 @@ console.log(nota1, nota2, nota3)
 const cientista = { primeiroNome: 'Will', expeciencia: 12 }
 const { primeiroNome, expeciencia } = cientista
 console.log(primeiroNome, expeciencia)
+
+// Callback
+function esperar3s(callback: (dado: string) => void) {
+  setTimeout(() => {
+    callback('3s depois...')
+  }, 3000)
+}
+
+esperar3s(function (resultado: string) {
+  console.log(resultado)
+})
+
+// Promise
+function esperar3sPromise() {
+  return new Promise((resolve: any) => {
+    setTimeout(() => {
+      resolve('4s depois promise...')
+    }, 4000)
+  })
+}
+
+esperar3sPromise()
+  .then(dado => console.log(dado));
+
+fetch('https://swapi.dev/api/people/1')
+  .then(res => res.json())
+  .then(personagem => personagem.films)
+  .then(films => fetch(films[1]))
+  .then(resFilms => resFilms.json())
+  .then(filme => console.log(filme.title))
